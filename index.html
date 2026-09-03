@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tee's Cleaning Services | Professional • Reliable • Detailed</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            100: '#FFF3C4',
+                            300: '#FCE078',
+                            400: '#F3C043',
+                            500: '#D4AF37', // Standard Metallic Gold
+                            600: '#AA820A',
+                            700: '#856100',
+                        },
+                        brandDark: '#0B0B0C',
+                        brandCard: '#141416',
+                        brandFlame: '#FF5722'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF3C4 0%, #F3C043 50%, #AA820A 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #FCE078 0%, #D4AF37 50%, #AA820A 100%);
+        }
+        .gold-border-glow {
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+        }
+        .gold-border-glow:hover {
+            border-color: rgba(212, 175, 55, 0.8);
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+        }
+        .bg-sparkles {
+            background-color: #0B0B0C;
+            background-image: 
+                radial-gradient(rgba(212, 175, 55, 0.12) 1px, transparent 0),
+                radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 0);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-brandDark text-gray-200 font-sans antialiased selection:bg-gold-500 selection:text-black">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-brandDark/90 backdrop-blur-md border-b border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full gold-gradient-bg flex items-center justify-center text-black font-extrabold text-xl shadow-lg">
+                    T
+                </div>
+                <div>
+                    <span class="text-xl sm:text-2xl font-black tracking-wider gold-gradient-text uppercase">TEE'S</span>
+                    <span class="block text-[10px] sm:text-xs text-gold-400 font-semibold tracking-widest uppercase">Cleaning Services</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
+                <a href="#services" class="hover:text-gold-400 transition">Services</a>
+                <a href="#pricing" class="hover:text-gold-400 transition">Pricing List</a>
+                <a href="#about" class="hover:text-gold-400 transition">About Us</a>
+                <a href="#contact" class="hover:text-gold-400 transition">Contact</a>
+            </nav>
+
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="tel:2513161526" class="flex items-center gap-2 text-gold-400 font-bold hover:text-gold-300 transition text-sm">
+                    <i class="fa-solid fa-phone"></i> 251-316-1526
+                </a>
+                <a href="#booking" class="gold-gradient-bg text-black font-bold px-5 py-2.5 rounded-full hover:brightness-110 transition text-sm shadow-md">
+                    Get Free Quote
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button id="menuBtn" class="md:hidden text-gold-400 text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-brandCard border-b border-gold-500/30 px-6 py-4 flex-col gap-4">
+            <a href="#services" class="mobile-link text-gray-200 hover:text-gold-400 py-1">Services</a>
+            <a href="#pricing" class="mobile-link text-gray-200 hover:text-gold-400 py-1">Pricing List</a>
+            <a href="#about" class="mobile-link text-gray-200 hover:text-gold-400 py-1">About Us</a>
+            <a href="#contact" class="mobile-link text-gray-200 hover:text-gold-400 py-1">Contact</a>
+            <div class="pt-3 border-t border-gray-800 flex flex-col gap-3">
+                <a href="tel:2513161526" class="text-gold-400 font-bold flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> 251-316-1526
+                </a>
+                <a href="#booking" class="mobile-link text-center gold-gradient-bg text-black font-bold py-2.5 rounded-full">
+                    Get Free Quote
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-sparkles pt-12 pb-20 md:py-28 overflow-hidden">
+        <!-- Glow Orbs -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 right-0 w-80 h-80 bg-brandFlame/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Content -->
+                <div class="md:col-span-7 space-y-6 text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brandFlame/20 border border-brandFlame/40 text-brandFlame text-xs sm:text-sm font-bold uppercase tracking-wide animate-pulse">
+                        <i class="fa-solid fa-fire"></i> Stop Living In A Mess!
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                        Let Tee's Cleaning Services <span class="gold-gradient-text block font-serif italic font-normal">Handle It!</span>
+                    </h1>
+
+                    <p class="text-gray-300 text-base sm:text-lg max-w-2xl font-light">
+                        Top-tier residential and commercial cleaning tailored for you. We deliver <strong class="text-gold-400 font-semibold">Professional, Reliable, and Detailed</strong> cleaning every single time—guaranteed!
+                    </p>
+
+                    <!-- Features Pill list -->
+                    <div class="grid grid-cols-2 gap-3 pt-2 max-w-lg mx-auto md:mx-0">
+                        <div class="flex items-center gap-2.5 bg-brandCard p-3 rounded-xl border border-gold-500/20">
+                            <i class="fa-solid fa-circle-check text-gold-400 text-lg"></i>
+                            <span class="text-xs sm:text-sm font-semibold">Deep Cleaning</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-brandCard p-3 rounded-xl border border-gold-500/20">
+                            <i class="fa-solid fa-circle-check text-gold-400 text-lg"></i>
+                            <span class="text-xs sm:text-sm font-semibold">Move-In / Move-Out</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-brandCard p-3 rounded-xl border border-gold-500/20">
+                            <i class="fa-solid fa-circle-check text-gold-400 text-lg"></i>
+                            <span class="text-xs sm:text-sm font-semibold">Weekly & Bi-Weekly</span>
+                        </div>
+                        <div class="flex items-center gap-2.5 bg-brandCard p-3 rounded-xl border border-gold-500/20">
+                            <i class="fa-solid fa-circle-check text-gold-400 text-lg"></i>
+                            <span class="text-xs sm:text-sm font-semibold">Office Cleaning</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+                        <a href="#booking" class="w-full sm:w-auto text-center gold-gradient-bg text-black font-extrabold px-8 py-4 rounded-full text-base hover:brightness-110 transition shadow-lg shadow-gold-500/20">
+                            CONTACT NOW FOR A FREE ESTIMATE!
+                        </a>
+                        <a href="tel:2513161526" class="w-full sm:w-auto text-center bg-brandCard hover:bg-gray-800 text-white font-bold px-6 py-4 rounded-full border border-gold-500/30 transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-phone text-gold-400"></i> Call: 251-316-1526
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Card / Badge Visual -->
+                <div class="md:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md bg-gradient-to-b from-brandCard to-black p-8 rounded-3xl gold-border-glow text-center space-y-6">
+                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold-500 text-black px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest shadow-md">
+                            ★ Top Rated Service ★
+                        </div>
+                        
+                        <div class="w-24 h-24 mx-auto rounded-full bg-gold-500/10 border-2 border-gold-400 flex items-center justify-center text-gold-400 text-4xl shadow-inner">
+                            <i class="fa-solid fa-sparkles"></i>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-white">Book With Tee's</h3>
+                            <p class="text-gold-300 font-serif italic text-sm mt-1">"I promise you won't be disappointed! 😘" </p>
+                        </div>
+
+                        <div class="bg-brandDark/80 p-4 rounded-2xl border border-gray-800 space-y-2 text-left">
+                            <div class="flex items-center justify-between text-xs text-gray-400">
+                                <span>Quality Guarantee</span>
+                                <span class="text-gold-400"><i class="fa-solid fa-star"></i> 5.0 Rating</span>
+                            </div>
+                            <p class="text-xs text-gray-300">
+                                Detailed, spotless, and custom-tailored to suit your home, office, or event cleanup needs.
+                            </p>
+                        </div>
+
+                        <a href="mailto:carltonkemah@gmail.com" class="text-xs text-gray-400 hover:text-gold-400 transition flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-envelope text-gold-400"></i> carltonkemah@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-brandDark relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-extrabold text-gold-400 uppercase tracking-widest">Our Expertise</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Comprehensive Cleaning Solutions</p>
+                <p class="text-gray-400 mt-3 text-sm sm:text-base">Whether it's a routine tidy-up, moving into a new home, or post-party restoration, Tee's Cleaning Services has you covered.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-brandCard p-6 rounded-2xl border border-gray-800 hover:border-gold-500/50 transition group">
+                    <div class="w-12 h-12 rounded-xl gold-gradient-bg flex items-center justify-center text-black text-xl font-bold mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-broom"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Deep Cleaning</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Top-to-bottom thorough detailing removing dirt, grime, and buildup in every corner of your residence.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-brandCard p-6 rounded-2xl border border-gray-800 hover:border-gold-500/50 transition group">
+                    <div class="w-12 h-12 rounded-xl gold-gradient-bg flex items-center justify-center text-black text-xl font-bold mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-truck-ramp-box"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Move-In / Move-Out</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Make your new home pristine or get your deposit back with our comprehensive turn-over cleaning service.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-brandCard p-6 rounded-2xl border border-gray-800 hover:border-gold-500/50 transition group">
+                    <div class="w-12 h-12 rounded-xl gold-gradient-bg flex items-center justify-center text-black text-xl font-bold mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Weekly & Bi-Weekly</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Keep your home continuously fresh with scheduled routine maintenance visits suited to your lifestyle.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-brandCard p-6 rounded-2xl border border-gray-800 hover:border-gold-500/50 transition group">
+                    <div class="w-12 h-12 rounded-xl gold-gradient-bg flex items-center justify-center text-black text-xl font-bold mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Office & Commercial</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Professional workspace cleaning for bigger buildings, offices, and commercial facilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-sparkles relative border-t border-b border-gold-500/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-block px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-bold uppercase tracking-wider mb-2">
+                    Transparent Pricing
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Simple, Affordable Rates</h2>
+                <p class="text-gray-400 mt-3 text-sm sm:text-base">No hidden surprises. Clear pricing designed to fit your budget for every area of your property.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 items-start">
+                
+                <!-- Pricing Table Card -->
+                <div class="bg-brandCard p-6 sm:p-8 rounded-3xl gold-border-glow">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-tags text-gold-400"></i> Standard Service Rates
+                    </h3>
+
+                    <div class="divide-y divide-gray-800">
+                        <div class="py-3.5 flex justify-between items-center gap-4">
+                            <div>
+                                <h4 class="font-semibold text-white text-sm sm:text-base">Deep Cleaning (Standard)</h4>
+                                <p class="text-xs text-gray-400">Single task / focus area deep clean</p>
+                            </div>
+                            <span class="text-gold-400 font-extrabold text-base sm:text-lg whitespace-nowrap">$60</span>
+                        </div>
+
+                        <div class="py-3.5 flex justify-between items-center gap-4">
+                            <div>
+                                <h4 class="font-semibold text-white text-sm sm:text-base">Kitchen / One Bedroom</h4>
+                                <p class="text-xs text-gray-400">Targeted room cleaning</p>
+                            </div>
+                            <span class="text-gold-400 font-extrabold text-base sm:text-lg whitespace-nowrap">$65</span>
+                        </div>
+
+                        <div class="py-3.5 flex justify-between items-center gap-4">
+                            <div>
+                                <h4 class="font-semibold text-white text-sm sm:text-base">Two Bathrooms / Living Room</h4>
+                                <p class="text-xs text-gray-400">High-traffic main living area focus</p>
+                            </div>
+                            <span class="text-gold-400 font-extrabold text-base sm:text-lg whitespace-nowrap">$75 – $80</span>
+                        </div>
+
+                        <div class="py-3.5 flex justify-between items-center gap-4">
+                            <div>
+                                <h4 class="font-semibold text-white text-sm sm:text-base">Dining Room / Custom Residence Area</h4>
+                                <p class="text-xs text-gray-400">Any additional room requested</p>
+                            </div>
+                            <span class="text-gold-400 font-extrabold text-base sm:text-lg whitespace-nowrap">$50 – $70</span>
+                        </div>
+
+                        <div class="py-3.5 flex justify-between items-center gap-4">
+                            <div>
+                                <h4 class="font-semibold text-white text-sm sm:text-base">Party Clean-Up</h4>
+                                <p class="text-xs text-gray-400">Full post-event trash and surface cleanup</p>
+                            </div>
+                            <span class="text-gold-400 font-extrabold text-base sm:text-lg whitespace-nowrap">$160 – $180</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Special Package Rates Card -->
+                <div class="space-y-6">
+                    <div class="bg-gradient-to-br from-brandCard to-gray-900 p-6 sm:p-8 rounded-3xl border border-gold-500/30 relative overflow-hidden">
+                        <div class="absolute -right-8 -top-8 w-32 h-32 bg-gold-500/10 rounded-full blur-2xl"></div>
+                        <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-house-sparkles text-gold-400"></i> Full Property Packages
+                        </h3>
+
+                        <div class="space-y-4">
+                            <div class="p-4 rounded-2xl bg-brandDark/80 border border-gray-800 hover:border-gold-500/30 transition">
+                                <div class="flex justify-between items-start mb-1">
+                                    <h4 class="font-bold text-white">Whole Apartment Deep Clean</h4>
+                                    <span class="text-gold-400 font-black">$120 – $140</span>
+                                </div>
+                                <p class="text-xs text-gray-400">Special rate applicable when just moving into a new apartment.</p>
+                            </div>
+
+                            <div class="p-4 rounded-2xl bg-brandDark/80 border border-gray-800 hover:border-gold-500/30 transition">
+                                <div class="flex justify-between items-start mb-1">
+                                    <h4 class="font-bold text-white">Deep Clean Whole House</h4>
+                                    <span class="text-gold-400 font-black">$180 – $200</span>
+                                </div>
+                                <p class="text-xs text-gray-400">Complete top-to-bottom thorough deep clean for standard family homes.</p>
+                            </div>
+
+                            <div class="p-4 rounded-2xl bg-brandDark/80 border border-gray-800 hover:border-gold-500/30 transition">
+                                <div class="flex justify-between items-start mb-1">
+                                    <h4 class="font-bold text-white">Help Moving In Service</h4>
+                                    <span class="text-gold-400 font-black">$150 – $180</span>
+                                </div>
+                                <p class="text-xs text-gray-400">Hands-on assistance with moving in combined with cleaning prep.</p>
+                            </div>
+
+                            <div class="p-4 rounded-2xl bg-brandDark/80 border border-gray-800 hover:border-gold-500/30 transition">
+                                <div class="flex justify-between items-start mb-1">
+                                    <h4 class="font-bold text-white">Bigger Buildings & Commercial</h4>
+                                    <span class="text-gold-400 font-black">$140 – $150</span>
+                                </div>
+                                <p class="text-xs text-gray-400">Tailored cleaning for commercial properties and larger structures.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fee Notice Box -->
+                    <div class="bg-brandDark p-5 rounded-2xl border border-gray-800 flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gold-500/10 flex items-center justify-center text-gold-400 shrink-0">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </div>
+                        <p class="text-xs text-gray-300 leading-relaxed">
+                            <strong class="text-white">On-Site Quote Fee:</strong> Coming out to inspect and give you a customized price in-person is just a flat <strong class="text-gold-400">$15.00 fee</strong>.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking / Contact Form Section -->
+    <section id="booking" class="py-20 bg-brandDark relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs font-extrabold text-gold-400 uppercase tracking-widest">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Ready for a Sparkling Clean Space?</h2>
+                    <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+                        Any services you need, feel free to contact me for any of your cleaning requirements. Book with Tee's Cleaning Services — I promise you won't be disappointed!
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <a href="tel:2513161526" class="flex items-center gap-4 p-4 rounded-2xl bg-brandCard border border-gray-800 hover:border-gold-500/40 transition">
+                            <div class="w-12 h-12 rounded-xl gold-gradient-bg flex items-center justify-center text-black text-xl font-bold">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-gray-400 uppercase block font-semibold">Call or Text</span>
+                                <span class="text-lg font-extrabold text-white">251-316-1526</span>
+                            </div>
+                        </a>
+
+                        <a href="mailto:carltonkemah@gmail.com" class="flex items-center gap-4 p-4 rounded-2xl bg-brandCard border border-gray-800 hover:border-gold-500/40 transition">
+                            <div class="w-12 h-12 rounded-xl gold-gradient-bg flex items-center justify-center text-black text-xl font-bold">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-gray-400 uppercase block font-semibold">Email Us</span>
+                                <span class="text-base sm:text-lg font-bold text-white">carltonkemah@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-brandCard border border-gray-800">
+                            <div class="w-12 h-12 rounded-xl bg-blue-600/20 text-blue-400 flex items-center justify-center text-xl font-bold">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-gray-400 uppercase block font-semibold">Facebook Profile</span>
+                                <span class="text-base font-bold text-white">Pretty Choc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Form Card -->
+                <div class="lg:col-span-7 bg-brandCard p-6 sm:p-10 rounded-3xl gold-border-glow">
+                    <h3 class="text-2xl font-bold text-white mb-2">Request Your Free Quote</h3>
+                    <p class="text-xs text-gray-400 mb-6">Fill out the quick form below and Tee will get back to you shortly!</p>
+
+                    <form id="quoteForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1">Your Full Name</label>
+                                <input type="text" required placeholder="Jane Doe" class="w-full bg-brandDark border border-gray-800 focus:border-gold-500 rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1">Phone Number</label>
+                                <input type="tel" required placeholder="(251) 000-0000" class="w-full bg-brandDark border border-gray-800 focus:border-gold-500 rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1">Service Required</label>
+                                <select class="w-full bg-brandDark border border-gray-800 focus:border-gold-500 rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition">
+                                    <option>Deep Cleaning ($60+)</option>
+                                    <option>Kitchen / One Bedroom ($65)</option>
+                                    <option>Two Bathrooms / Living Room ($75 - $80)</option>
+                                    <option>Whole Apartment Move-In ($120 - $140)</option>
+                                    <option>Whole House Deep Clean ($180 - $200)</option>
+                                    <option>Help Moving In ($150 - $180)</option>
+                                    <option>Party Cleaning ($160 - $180)</option>
+                                    <option>Bigger Buildings ($140 - $150)</option>
+                                    <option>On-Site Quote Request ($15 Fee)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 mb-1">Preferred Date</label>
+                                <input type="date" class="w-full bg-brandDark border border-gray-800 focus:border-gold-500 rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 mb-1">Property Details or Special Instructions</label>
+                            <textarea rows="4" placeholder="Tell us about the property size, rooms needed, or specific areas..." class="w-full bg-brandDark border border-gray-800 focus:border-gold-500 rounded-xl px-4 py-3 text-sm text-white focus:outline-none transition"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full gold-gradient-bg text-black font-extrabold py-4 rounded-xl text-base hover:brightness-110 transition shadow-lg shadow-gold-500/20 uppercase tracking-wider">
+                            Send Quote Request
+                        </button>
+                    </form>
+
+                    <!-- Success Message Popup Container -->
+                    <div id="successMessage" class="hidden mt-4 p-4 rounded-xl bg-emerald-900/30 border border-emerald-500/50 text-emerald-300 text-sm text-center">
+                        <i class="fa-solid fa-circle-check text-emerald-400 mr-2"></i> Thank you! Your quote request has been sent. Tee will contact you shortly.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-10 border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full gold-gradient-bg flex items-center justify-center text-black font-extrabold text-sm">
+                    T
+                </div>
+                <span class="text-lg font-black gold-gradient-text">TEE'S CLEANING SERVICES</span>
+            </div>
+
+            <p class="text-xs text-gray-500 text-center">
+                © <span id="year"></span> Tee's Cleaning Services. All rights reserved. Professional • Reliable • Detailed
+            </p>
+
+            <div class="flex items-center gap-4 text-xs text-gray-400">
+                <a href="tel:2513161526" class="hover:text-gold-400">Call: 251-316-1526</a>
+                <span>•</span>
+                <a href="mailto:carltonkemah@gmail.com" class="hover:text-gold-400">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        // Set dynamic current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Nav Toggle Logic
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+            });
+        });
+
+        // Form Submission Handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const successBox = document.getElementById('successMessage');
+            const form = document.getElementById('quoteForm');
+            
+            successBox.classList.remove('hidden');
+            form.reset();
+
+            setTimeout(() => {
+                successBox.classList.add('hidden');
+            }, 6000);
+        }
+    </script>
+</body>
+</html>
