@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tee's Cleaning Services | Professional • Reliable • Detailed</title>
+    
+    <!-- Meta & Canonical Links -->
+    <link rel="canonical" href="https://creativetugs.github.io/Tee-Cleaning-Services-Landing-Page/">
+    <meta property="og:title" content="Tee's Cleaning Services | Professional • Reliable • Detailed">
+    <meta property="og:description" content="Top-tier residential and commercial cleaning. Deep cleaning, move-in/out, offices, and regular maintenance.">
+    <meta property="og:url" content="https://creativetugs.github.io/Tee-Cleaning-Services-Landing-Page/">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Creativetugs/Tee-Cleaning-Services-Landing-Page/refs/heads/main/tee.jpg">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
@@ -170,20 +178,24 @@
                     </div>
                 </div>
 
-                <!-- Hero Card / Badge Visual -->
+                <!-- Hero Card / Tee's Featured Profile Image -->
                 <div class="md:col-span-5 flex justify-center">
-                    <div class="relative w-full max-w-md bg-gradient-to-b from-brandCard to-black p-8 rounded-3xl gold-border-glow text-center space-y-6">
+                    <div class="relative w-full max-w-md bg-gradient-to-b from-brandCard to-black p-6 sm:p-8 rounded-3xl gold-border-glow text-center space-y-6">
                         <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold-500 text-black px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest shadow-md">
-                            ★ Top Rated Service ★
+                            ★ Owner & Lead Specialist ★
                         </div>
                         
-                        <div class="w-24 h-24 mx-auto rounded-full bg-gold-500/10 border-2 border-gold-400 flex items-center justify-center text-gold-400 text-4xl shadow-inner">
-                            <i class="fa-solid fa-sparkles"></i>
+                        <!-- Tee's Photo Frame -->
+                        <div class="relative w-48 h-48 sm:w-56 sm:h-56 mx-auto rounded-full p-1.5 gold-gradient-bg shadow-2xl overflow-hidden group">
+                            <img src="https://raw.githubusercontent.com/Creativetugs/Tee-Cleaning-Services-Landing-Page/refs/heads/main/tee.jpg" 
+                                 alt="Tee - Tee's Cleaning Services Owner" 
+                                 class="w-full h-full object-cover rounded-full group-hover:scale-105 transition duration-500"
+                                 onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full rounded-full bg-gold-500/10 border-2 border-gold-400 flex items-center justify-center text-gold-400 text-5xl\'><i class=\'fa-solid fa-sparkles\'></i></div>';">
                         </div>
 
                         <div>
                             <h3 class="text-2xl font-extrabold text-white">Book With Tee's</h3>
-                            <p class="text-gold-300 font-serif italic text-sm mt-1">"I promise you won't be disappointed! 😘" </p>
+                            <p class="text-gold-300 font-serif italic text-sm mt-1">"I promise you won't be disappointed! 😘"</p>
                         </div>
 
                         <div class="bg-brandDark/80 p-4 rounded-2xl border border-gray-800 space-y-2 text-left">
@@ -375,8 +387,8 @@
         </div>
     </section>
 
-    <!-- Booking / Contact Form Section -->
-    <section id="booking" class="py-20 bg-brandDark relative">
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="py-20 bg-brandDark relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
                 
@@ -408,6 +420,16 @@
                             </div>
                         </a>
 
+                        <a href="https://creativetugs.github.io/Tee-Cleaning-Services-Landing-Page/" target="_blank" rel="noopener" class="flex items-center gap-4 p-4 rounded-2xl bg-brandCard border border-gray-800 hover:border-gold-500/40 transition">
+                            <div class="w-12 h-12 rounded-xl gold-gradient-bg flex items-center justify-center text-black text-xl font-bold">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-gray-400 uppercase block font-semibold">Official Website</span>
+                                <span class="text-xs sm:text-sm font-bold text-white break-all">creativetugs.github.io/Tee-Cleaning-Services-Landing-Page/</span>
+                            </div>
+                        </a>
+
                         <div class="flex items-center gap-4 p-4 rounded-2xl bg-brandCard border border-gray-800">
                             <div class="w-12 h-12 rounded-xl bg-blue-600/20 text-blue-400 flex items-center justify-center text-xl font-bold">
                                 <i class="fa-brands fa-facebook"></i>
@@ -421,7 +443,7 @@
                 </div>
 
                 <!-- Interactive Form Card -->
-                <div class="lg:col-span-7 bg-brandCard p-6 sm:p-10 rounded-3xl gold-border-glow">
+                <div id="booking" class="lg:col-span-7 bg-brandCard p-6 sm:p-10 rounded-3xl gold-border-glow">
                     <h3 class="text-2xl font-bold text-white mb-2">Request Your Free Quote</h3>
                     <p class="text-xs text-gray-400 mb-6">Fill out the quick form below and Tee will get back to you shortly!</p>
 
@@ -492,10 +514,12 @@
                 © <span id="year"></span> Tee's Cleaning Services. All rights reserved. Professional • Reliable • Detailed
             </p>
 
-            <div class="flex items-center gap-4 text-xs text-gray-400">
+            <div class="flex flex-wrap items-center justify-center gap-4 text-xs text-gray-400">
                 <a href="tel:2513161526" class="hover:text-gold-400">Call: 251-316-1526</a>
                 <span>•</span>
                 <a href="mailto:carltonkemah@gmail.com" class="hover:text-gold-400">Email</a>
+                <span>•</span>
+                <a href="https://creativetugs.github.io/Tee-Cleaning-Services-Landing-Page/" target="_blank" rel="noopener" class="hover:text-gold-400">Website</a>
             </div>
         </div>
     </footer>
